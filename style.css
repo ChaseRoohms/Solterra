@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+:root{
+    --darkblue: #2443e1;
+    --blue: #3F5EFB;
+    --lightBlue: #5770ff;
+    --white: #fff;
+    --offWhite: #e3e9ef;
+    --lightestGray: #C4C2C2FF;
+    --lightGray: #FFFFFF7F;
+    --gray: #494B4FFF;
+    --darkGray: #2f3033;
+    --black: #000000FF;
+}
+html,body {
+    text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+}
+h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 80px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+h2{
+    font-family: 'Barlow Condensed', sans-serif;
+    text-align: left;
+    font-size: xxx-large;
+    margin-bottom: 0;
+    margin-top: 10px
+}
+h3{
+    font-family: 'Barlow Condensed', sans-serif;
+    text-align: left;
+    font-size: xx-large;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+h4{
+    font-family: 'Barlow Condensed', sans-serif;
+    text-align: center;
+    font-size: x-large;
+    margin: 0;
+}
+hr{
+    margin: 0;
+    border-color: var(--darkGray);
+}
+.topBar{
+    margin-top: 110px;
+}
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: large;
+    margin-bottom: 0;
+    margin-top: 0;
+    color: var(--darkGray);
+}
+ul{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: large;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-align: left;
+    font-size: large;
+    z-index: 1;
+    margin: 0;
+    color: var(--darkGray);
+}
+span {
+    font-size: large;
+}
+body {
+    background-color: var(--black);
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: var(--darkGray);
+}
+.main {
+    display: block;
+    height: 100%;
+    margin: auto;
+    padding: 0 0;
+    text-align: center;
+}
+.mainInner{
+    position: relative;
+    background-color: var(--white);
+    display: table;
+    height: 100%;
+    text-align: center;
+    transition: margin-left .5s;
+    min-width: 400px;
+    margin: auto;
+    padding: 10px 40px;
+}
+.mainInner div{
+    display:table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+.header {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: none;
+    background-color: var(--black);
+    position: fixed;
+    height: 60px!important;
+    top: 0;
+    overflow: hidden;
+    z-index: 10;
+
+}
+.headerText {
+    color: var(--white);
+    font-family: 'Orbitron', sans-serif;
+    font-size: xx-large;
+    margin: 8px 10px;
+    float: right
+}
+/* The side navigation menu */
+.sidebarMenu {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background: linear-gradient(180deg, var(--black) 0%, var(--lightGray) 100%);
+    overflow-x: hidden; /* Disable horizontal scroll */
+    white-space: nowrap;
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/*   FROM OTHER DOC    */
+.sidebarMenuInner{
+    font-size: large;
+    margin:0;
+    padding:0;
+    border-top: 1px solid var(--offWhite);
+    cursor: default;
+}
+.sidebarMenuInner li{
+    display: block;
+    list-style: none;
+    color: var(--offWhite);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px;
+    cursor: default;
+    border-bottom: 1px solid var(--offWhite);
+    text-decoration: none;
+}
+.sidebarMenuInner li span{
+    display: block;
+    font-size: 14px;
+    cursor: default;
+    color: var(--offWhite);
+    text-decoration: none;
+}
+.sidebarMenuInner li a{
+    color: var(--offWhite);
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 1.18em 9em;
+    margin: -1.18em -9em;
+}
+/* When you mouse over the navigation links, change their color */
+li a:hover {
+    color: var(--darkGray);
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/*Menu Icon*/
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+input[type=button]{
+    background: 0;
+    border: 0;
+    margin: -6px 11px;
+    height: 38px;
+    width: 50px;
+    padding: 0;
+    position: fixed;
+    z-index: 99;
+}
+
+.bar1 {
+    box-sizing: border-box;
+    width: 40px;
+    height: 5px;
+    background-color: var(--offWhite);
+    position: fixed;
+    margin: 0;
+    top: 16px;
+    left: 16px;
+    transition: 0.4s;
+    z-index: 20;
+}
+
+.bar2 {
+    box-sizing: border-box;
+    width: 40px;
+    height: 5px;
+    background-color: var(--offWhite);
+    position: fixed;
+    margin: 0;
+    top: 26px;
+    left: 16px;
+    transition: 0.4s;
+    z-index: 20;
+}
+
+.bar3 {
+    box-sizing: border-box;
+    width: 40px;
+    height: 5px;
+    background-color: var(--offWhite);
+    position: fixed;
+    top: 36px;
+    left: 16px;
+    margin: 0;
+    transition: 0.4s;
+    z-index: 20;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+    transform: translate(0, 10px) rotate(-45deg);
+}
+/* Fade out the second bar */
+.change .bar2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .bar3 {
+    transform: translate(0, -10px) rotate(45deg);
+}
+#active {
+    color: var(--lightGray);
+}
+
+.activeLink {
+    pointer-events: none;
+    cursor: default;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.notBold{
+    font-weight: normal;
+}
+
+.italic{
+    font-style: italic;
+}
+
+img.stretchy {
+    width: 100%;
+    border-radius: 10px;
+    margin: 0;
+    vertical-align: top;
+}
+
+.imgContainer {
+    margin: 0;
+}
+
+img.stretchyHeader {
+    width: 100%;
+}
+
+.containerHeader {
+    margin-top: 0;
+    text-align: center;
+    position: relative;
+    z-index:0;
+    margin-bottom: 0;
+    height: 300px;
+    min-width: 500px;
+}
+
+.headerCenteredText {
+    position: absolute;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+    font-size: 80px;
+}
+
+.headerSecondRow {
+    position: absolute;
+    bottom: 30%;
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+    font-size: xxx-large
+}
+
+
+.columnLeft {
+    float: left;
+    width: 65%;
+    padding-right: 5%;
+}
+
+.columnRight {
+    float: right;
+    width: 30%;
+    max-width: 250px;
+    position: sticky; top:0;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* unvisited link */
+a:link {
+    color: var(--darkGray);
+    text-decoration: none;
+    font-size: large;
+}
+
+/* visited link */
+a:visited {
+    color: var(--darkGray);
+    text-decoration: none;
+    font-size: large;
+}
+
+/* mouse over link */
+a:hover {
+    color: var(--blue);
+    text-decoration: none;
+    font-size: large;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+    text-decoration: none;
+    font-size: large;
+}
+
+.bullets{
+    padding: 00px 50px;
+}
+
+@media screen and (max-device-width: 750px) {
+    .columnLeft {
+        width: 100%;
+        padding-right: 0;
+    }
+    .columnRight {
+        width: 100%;
+        float: left;
+        max-width: unset;
+        position: unset;
+    }
+    h4{
+        text-align: left;
+    }
+    .topBar{
+        margin-top: -50px;
+    }
+    #main{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .columnLeft {
+        width: 100%;
+        padding-right: 0;
+    }
+    .columnRight {
+        width: 100%;
+        float: left;
+        max-width: unset;
+        position: unset;
+    }
+    h4{
+        text-align: left;
+    }
+    .topBar{
+        margin-top: -50px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #main{
+        padding: 0;
+    }
+}
